@@ -196,13 +196,14 @@
 
           <div class="content has-text-justified">
             <p>
-              Latest advances have achieved realistic virtual try-on (VTON) through localized garment inpainting using latent diffusion models, significantly enhancing consumers' online shopping experience. However, existing VTON technologies neglect the need for merchants to showcase garments comprehensively, including flexible control over garments, optional faces, poses, and scenes. To address this issue, we define a virtual dressing (VD) task focused on generating freely editable human images with fixed garments and optional conditions. Meanwhile, we design a comprehensive affinity metric index (CAMI) to evaluate the consistency between generated images and reference garments.
-              Then, we propose IMAGDressing-v1, which incorporates a garment UNet that captures semantic features from CLIP and texture features from VAE. 
-              We present a hybrid attention module, including a frozen self-attention and a trainable cross-attention, to integrate garment features from the garment UNet into a frozen denoising UNet, ensuring users can control different scenes through text. 
-              IMAGDressing-v1 can be combined with other extension plugins, such as ControlNet and IP-Adapter, to enhance the diversity and controllability of generated images. 
-              Furthermore, to address the lack of data, we release the interactive garment pairing (IGPair) dataset, containing over 300,000 pairs of clothing and dressed images, and establish a standard pipeline for data assembly.
-              Extensive experiments demonstrate that our IMAGDressing-v1 achieves state-of-the-art human image synthesis performance under various controlled conditions.
-              The code and model will be available at <a href="https://github.com/muzishen/IMAGDressing" style="font-weight: bold;">https://github.com/muzishen/IMAGDressing</a>.
+                This paper presents IMAGGarment-1, a fine-grained garment generation (FGG) framework that enables high-fidelity garment synthesis with precise control over silhouette, color, and logo placement. 
+                Unlike existing methods that are limited to single-condition inputs, IMAGGarment-1 addresses the challenges of multi-conditional controllability in personalized fashion design and digital apparel applications.
+                Specifically, IMAGGarment-1 employs a two-stage training strategy to separately model global appearance and local details, while enabling unified and controllable generation through end-to-end inference.
+                In the first stage, we propose a global appearance model that jointly encodes silhouette and color using a mixed attention module and a color adapter.
+                In the second stage, we present a local enhancement model with an adaptive appearance-aware module to inject user-defined logos and spatial constraints, enabling accurate placement and visual consistency.
+                To support this task, we release GarmentBench, a large-scale dataset comprising over 180K garment samples paired with multi-level design conditions, including sketches, color references, logo placements, and textual prompts. 
+                Extensive experiments demonstrate that our method outperforms existing baselines, achieving superior structural stability, color fidelity, and local controllability performance. Code, models, and datasets will be publicly available.
+              <!-- The code and model will be available at <a href="https://github.com/muzishen/IMAGDressing" style="font-weight: bold;">https://github.com/muzishen/IMAGDressing</a>. -->
             </p>
             </p>
           </div>
