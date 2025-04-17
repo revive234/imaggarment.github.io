@@ -251,7 +251,7 @@
                             <li>New Task: Definition of virtual dressing (VD) Task and design a comprehensive affinity metric index (CAMI) metric</li>
                             <li>Flexible Plugin Compatibility: IMAGDressing-v1 modestly integrates with extension plugins such as IP-Adapter, ControlNet, T2I-Adapter, and AnimateDiff.</li>
                             <li>Rapid Customization: Enables rapid customization in seconds without the need for additional LoRA training.</li>
-                            <li>IGPair Dataset: Release a new interactive garment pairing (IGPair) dataset</li>
+                            <li>GarmentBench Dataset: Release a new interactive garment pairing (GarmentBench) dataset</li>
                         </ul>
                     </div>
                     <div class="container is-max-desktop">
@@ -365,24 +365,24 @@
         </div>
     </section> -->
   
-    <!-- IGPair Dataset Description -->
+    <!-- GarmentBench Dataset Description -->
     <section class="section">
         <div class="container is-max-desktop">
-            <h2 class="title is-3">IGPair Dataset Demo</h2>
-            You can download at <a href="https://huggingface.co/datasets/IMAGDressing/IGPair" style="font-weight: bold;">https://huggingface.co/datasets/IMAGDressing/IGPair</a><br><br><br><br>
+            <h2 class="title is-3">GarmentBench Dataset Demo</h2>
+            <!-- You can download at <a href="https://huggingface.co/datasets/IMAGDressing/GarmentBench" style="font-weight: bold;">https://huggingface.co/datasets/IMAGDressing/GarmentBench</a><br><br><br><br> -->
 
             
             <img src="./static/images/dataset_sample_v4.png" width="96%" height="96%">
   
             <div class="content has-text-justified">
-                <h3 class="title is-4">IGPair Dataset</h3>
+                <h3 class="title is-4">GarmentBench Dataset</h3>
                 <p>
-                    IGPair includes multiple models for each clothing item. It is also the first dataset with a resolution exceeding 2k*2k. Additionally, IGPair is the first publicly available dataset that includes textual descriptions, diverse scenes, and various styles. Specifically, IGPair includes 86,873 garments. We categorize the garments into 18 types, and the dataset consists of 324,857 image pairs.
+                    GarmentBench includes multiple models for each clothing item. It is also the first dataset with a resolution exceeding 2k*2k. Additionally, GarmentBench is the first publicly available dataset that includes textual descriptions, diverse scenes, and various styles. Specifically, GarmentBench includes 86,873 garments. We categorize the garments into 18 types, and the dataset consists of 324,857 image pairs.
                 </p>
                 
                 <h3 class="title is-4">Data Structure</h3>
                 <p>
-                    Now we release the body mask (in folder <strong>'./body_mask/'</strong>), clothes (in folder <strong>'./clothes/'</strong>), densepose (in folder <strong>'./densepose/'</strong>), openpose (in folder <strong>'./openpose/'</strong>), IGPair Test Data (in folder <strong>'./IGPair_Test/'</strong>), and annotations (in folder <strong>'./IGPair.json/'</strong>) for IGPair.
+                    Now we release the body mask (in folder <strong>'./body_mask/'</strong>), clothes (in folder <strong>'./clothes/'</strong>), densepose (in folder <strong>'./densepose/'</strong>), openpose (in folder <strong>'./openpose/'</strong>), GarmentBench Test Data (in folder <strong>'./GarmentBench_Test/'</strong>), and annotations (in folder <strong>'./GarmentBench.json/'</strong>) for GarmentBench.
                 </p>
                 <p>
                     Each annotation adheres to the subsequent Parquet format specifications, including column names and corresponding content examples:
@@ -405,8 +405,8 @@
                 <h3 class="title is-4">Download Instructions</h3>
                 <pre><code>
           
-                cd IGPair/IGPair_dataset
-                cat IGPair.zip.* > IGPair.zip
+                cd GarmentBench/GarmentBench_dataset
+                cat GarmentBench.zip.* > GarmentBench.zip
               </code></pre>
   
                 <h3 class="title is-4">Citation Information</h3>
