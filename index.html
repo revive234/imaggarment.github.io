@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>IMAGDressing</title>
+  <title>IMAGDGarment-1</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -212,7 +212,7 @@
                 In the second stage, we present a local enhancement model with an adaptive appearance-aware module to inject user-defined logos and spatial constraints, enabling accurate placement and visual consistency.
                 To support this task, we release GarmentBench, a large-scale dataset comprising over 180K garment samples paired with multi-level design conditions, including sketches, color references, logo placements, and textual prompts. 
                 Extensive experiments demonstrate that our method outperforms existing baselines, achieving superior structural stability, color fidelity, and local controllability performance. 
-              The code and model will be available at <a href="https://github.com/muzishen/IMAGGarment-1" style="font-weight: bold;">https://github.com/muzishen/IMAGGarment-1</a>.
+              The code and model are available at <a href="https://github.com/muzishen/IMAGGarment-1" style="font-weight: bold;">https://github.com/muzishen/IMAGGarment-1</a>.
             </p>
             </p>
           </div>
@@ -223,36 +223,53 @@
   </section>
   
   
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMAGDressing-v1 Features</title>
-</head>
-<body>
-    <!-- Image carousel -->
-
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      .section {
+        padding: 2rem 1rem;
+      }
+      .title {
+        margin-bottom: 1rem;
+      }
+      .container img {
+        margin-top: 1rem;
+        border-radius: 8px;
+      }
+      .container p {
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
     <section class="section">
       <div class="container is-max-desktop">
-          <!-- Base Version Results -->
-          <div class="columns is-centered has-text-centered">
-              <div class="column is-four-fifths">
-                <h2 class="title is-3">FGG Task definition</h2>
-		  <p>
-                        Fine-Grained Garment Generation (FGG) is a controllable image synthesis task focused on generating garments with detailed structure, color, and logo specifications.
-It aims to produce high-fidelity clothing visuals that align with precise design constraints and creative intent.
-FGG supports flexible conditioning on multiple attributes, making it suitable for diverse virtual fashion applications.
-                    </p>
-                  <div class="container is-max-desktop">
-                      <img src="./static/images/introductionv3-1.png" alt="Image0" style="width: 100%;">
-                  </div>
-              </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">FGG Task Definition</h2>
+            <p>
+              Fine-Grained Garment Generation (FGG) is a controllable image synthesis task focused on generating garments with detailed structure, color, and logo specifications. 
+              It aims to produce high-fidelity clothing visuals that align with precise design constraints and creative intent. 
+              FGG supports flexible conditioning on multiple attributes, making it suitable for diverse virtual fashion applications.
+            </p>
+            <img src="./static/images/page-task.png" alt="FGG Illustration" style="width: 100%;" />
           </div>
+        </div>
       </div>
-  </section>
-</body> 
-</html>
+    </section>
+  </body>
+  </html>
+  
     <section class="method">
         <div class="container is-max-desktop">
             <!-- Abstract -->
@@ -300,7 +317,60 @@ FGG supports flexible conditioning on multiple attributes, making it suitable fo
     </section>
 	
 
-	
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Different Colors and Silhouettes</h2>
+            <div class="container">
+              <img src="./static/images/app1-1.png" alt="Additional Result 1" style="width: 100%; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <!-- Optional: add a title if needed -->
+            <div class="container">
+              <img src="./static/images/app1-2.png" alt="Additional Result 2" style="width: 100%; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">More Results</h2>
+            <div class="container">
+              <img src="./static/images/appendix1-1.png" alt="Additional Result 1" style="width: 100%; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <!-- Optional: add a title if needed -->
+            <div class="container">
+              <img src="./static/images/appendix1-2.png" alt="Additional Result 2" style="width: 100%; border-radius: 8px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 	
     <!-- End image carousel -->
 <!-- <section class="section">
@@ -408,7 +478,7 @@ FGG supports flexible conditioning on multiple attributes, making it suitable fo
             <!-- You can download at <a href="https://huggingface.co/datasets/IMAGDressing/GarmentBench" style="font-weight: bold;">https://huggingface.co/datasets/IMAGDressing/GarmentBench</a><br><br><br><br> -->
 
             
-            <img src="./static/images/dataset_sample_v4.png" width="96%" height="96%">
+            <img src="./static/images/dataset_sample_v4-1.png" width="96%" height="96%">
   
             <div class="content has-text-justified">
                 <h3 class="title is-4">GarmentBench Dataset</h3>
@@ -437,12 +507,12 @@ FGG supports flexible conditioning on multiple attributes, making it suitable fo
   
   
                 <h3 class="title is-4">Citation Information</h3>
-                <!-- <pre><code>@article{shen2024IMAGDressing-v1,
-    title={IMAGDressing-v1: Customizable Virtual Dressing},
-    author={Shen, Fei and Jiang, Xin and He, Xin and Ye, Hu and Wang, Cong, and Du, Xiaoyu, Zechao, Li and Tang, Jinhui},
-    booktitle={arXiv preprint arXiv:2407.12705},
-    year={2024}
-  }</code></pre> -->
+                <pre><code>@article{shen2025IMAGGarment-1,
+    title={IMAGGarment-1: Fine-Grained Garment Generation for Controllable Fashion Design},
+    author={Shen, Fei and Yu, Jian and Wang, Cong and Jiang, Xin and Du, Xiaoyu and Tang, Jinhui},
+    booktitle={arXiv preprint arXiv:2504.13176},
+    year={2025}
+  }</code></pre>
             </div>
         </div>
     </section>
