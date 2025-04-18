@@ -223,7 +223,7 @@
   </section>
   
   
-  <!DOCTYPE html>
+  <!-- <!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -268,38 +268,9 @@
       </div>
     </section>
   </body>
-  </html>
+  </html> -->
   
-    <section class="method">
-        <div class="container is-max-desktop">
-            <!-- Abstract -->
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Method</h2>
-                    <!-- <div class="content has-text-justified">
-                        <ul>
-                            <li>Simple Architecture: IMAGDressing-v1 produces lifelike garments and enables easy user-driven scene editing.</li>
-                            <li>New Task: Definition of virtual dressing (VD) Task and design a comprehensive affinity metric index (CAMI) metric</li>
-                            <li>Flexible Plugin Compatibility: IMAGDressing-v1 modestly integrates with extension plugins such as IP-Adapter, ControlNet, T2I-Adapter, and AnimateDiff.</li>
-                            <li>Rapid Customization: Enables rapid customization in seconds without the need for additional LoRA training.</li>
-                            <li>GarmentBench Dataset: Release a new interactive garment pairing (GarmentBench) dataset</li>
-                        </ul>
-                    </div> -->
-                    <div class="container is-max-desktop">
-                        <img src="./static/images/architecture.png" alt="Image0" style="width: 100%;">
-                    </div>
-                    <div class="content has-text-justified">
-                    <p>
-                        Our framework comprises two components: a global appearance model (stage I) and a local enhancement model (stage II), which explicitly disentangle and jointly control the global appearance and local details under multi-conditional guidance, enabling accurate synthesis of garment silhouette, color, and logo placement.
-                        The global appearance model first generates a latent of coarse garment image conditioned on the textual prompt, garment silhouette, and color palette. 
-                        Subsequently, the local enhancement model refines this latent representation by integrating user-defined logo and spatial constraint, producing the final high-fidelity garment image with fine-grained controllability.
-                    </p>
-                    </div>
-                    
-            </div>
-            <!--/ Abstract -->
-        </div>
-    </section>
+ 
     <section class="section">
         <div class="container is-max-desktop">
             
@@ -444,7 +415,36 @@
      
   </section> -->
 
-
+  <section class="method">
+    <div class="container is-max-desktop">
+        <!-- Abstract -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Method</h2>
+                <!-- <div class="content has-text-justified">
+                    <ul>
+                        <li>Simple Architecture: IMAGDressing-v1 produces lifelike garments and enables easy user-driven scene editing.</li>
+                        <li>New Task: Definition of virtual dressing (VD) Task and design a comprehensive affinity metric index (CAMI) metric</li>
+                        <li>Flexible Plugin Compatibility: IMAGDressing-v1 modestly integrates with extension plugins such as IP-Adapter, ControlNet, T2I-Adapter, and AnimateDiff.</li>
+                        <li>Rapid Customization: Enables rapid customization in seconds without the need for additional LoRA training.</li>
+                        <li>GarmentBench Dataset: Release a new interactive garment pairing (GarmentBench) dataset</li>
+                    </ul>
+                </div> -->
+                <div class="container is-max-desktop">
+                    <img src="./static/images/architecture.png" alt="Image0" style="width: 100%;">
+                </div>
+                <div class="content has-text-justified">
+                <p>
+                    Our framework comprises two components: a global appearance model (stage I) and a local enhancement model (stage II), which explicitly disentangle and jointly control the global appearance and local details under multi-conditional guidance, enabling accurate synthesis of garment silhouette, color, and logo placement.
+                    The global appearance model first generates a latent of coarse garment image conditioned on the textual prompt, garment silhouette, and color palette. 
+                    Subsequently, the local enhancement model refines this latent representation by integrating user-defined logo and spatial constraint, producing the final high-fidelity garment image with fine-grained controllability.
+                </p>
+                </div>
+                
+        </div>
+        <!--/ Abstract -->
+    </div>
+</section>
 
 
   <!DOCTYPE html>
