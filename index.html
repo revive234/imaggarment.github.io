@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>IMAGDGarment-1</title>
+  <title>IMAGGarment</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
 		            <h1 class="title is-size-2 publication-title">
-                        IMAGGarment-1: Fine-Grained Garment Generation for Controllable Fashion Design                        
+                        IMAGGarment: Fine-Grained Garment Generation for Controllable Fashion Design                        
           </h1>
 
 <!--            <div class="is-size-5 publication-authors">-->
@@ -68,27 +68,30 @@
     <a href="https://muzishen.github.io/" target="_blank">Fei Shen</a> <sup>1</sup><br>
   </span>
   <span class="author-block">
-    <a href="" target="_blank">Jian Yu</a> <sup>1</sup><br>
+    <a href="" target="_blank">Jian Yu</a> <sup>2</sup><br>
   </span>
 
   <span class="author-block">
-    <a href="https://tenvence.github.io/" target="_blank">Cong Wang</a> <sup>2</sup><br>
+    <a href="https://tenvence.github.io/" target="_blank">Cong Wang</a> <sup>3</sup><br>
   </span>
   <span class="author-block">
-    <a href="https://scholar.google.com/citations?user=moDfIyoAAAAJ&hl=en" target="_blank">Xin Jiang</a> <sup>1</sup><br>
+    <a href="https://scholar.google.com/citations?user=moDfIyoAAAAJ&hl=en" target="_blank">Xin Jiang</a> <sup>2</sup><br>
   </span>
   <span class="author-block">
-   <a href="https://scholar.google.com/citations?user=vs_MX8kAAAAJ&hl=en" target="_blank">Xiaoyu Du</a> <sup>1</sup><br>
+   <a href="https://scholar.google.com/citations?user=vs_MX8kAAAAJ&hl=en" target="_blank">Xiaoyu Du</a> <sup>2</sup><br>
   </span>
  
   <span class="author-block">
-    <a href="https://scholar.google.com.hk/citations?user=ByBLlEwAAAAJ&hl=en" target="_blank">Jinhui Tang</a> <sup>1</sup><br>
+    <a href="https://scholar.google.com.hk/citations?user=ByBLlEwAAAAJ&hl=en" target="_blank">Jinhui Tang</a> <sup>4</sup><br>
   </span>
 </div>
 
 <div class="is-size-5 publication-authors">
-  <span class="author-block"><sup>1</sup> Nanjing University of Science and Technology</span>
-  <span class="author-block"><sup>2</sup> Nanjing University</span>
+  <span class="author-block"><sup>1</sup> National University of Singapore</span>
+  <span class="author-block"><sup>2</sup> Nanjing University of Science and Technology</span>
+  
+  <span class="author-block"><sup>3</sup> Nanjing University</span>
+  <span class="author-block"><sup>4</sup> Nanjing Forestry University</span>
 </div>
 
 
@@ -172,26 +175,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<!--<section class="hero teaser">-->
-<!--  <div class="container is-max-desktop">-->
-<!--    <div class="hero-body">-->
-<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
-<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
-<!--        <source src="static/videos/banner_video.mp4"-->
-<!--        type="video/mp4">-->
-<!--      </video>-->
-<!--      <h2 class="subtitle has-text-centered">-->
-<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. -->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!-- End teaser video -->
-
-
-<!-- End paper abstract -->
-
 
 
 
@@ -205,14 +188,14 @@
 
           <div class="content has-text-justified">
             <p>
-                This paper presents IMAGGarment-1, a fine-grained garment generation (FGG) framework that enables high-fidelity garment synthesis with precise control over silhouette, color, and logo placement. 
-                Unlike existing methods that are limited to single-condition inputs, IMAGGarment-1 addresses the challenges of multi-conditional controllability in personalized fashion design and digital apparel applications.
-                Specifically, IMAGGarment-1 employs a two-stage training strategy to separately model global appearance and local details, while enabling unified and controllable generation through end-to-end inference.
+                This paper presents IMAGGarment, a fine-grained garment generation (FGG) framework that enables high-fidelity garment synthesis with precise control over silhouette, color, and logo placement. 
+                Unlike existing methods that are limited to single-condition inputs, IMAGGarment addresses the challenges of multi-conditional controllability in personalized fashion design and digital apparel applications.
+                Specifically, IMAGGarment employs a two-stage training strategy to separately model global appearance and local details, while enabling unified and controllable generation through end-to-end inference.
                 In the first stage, we propose a global appearance model that jointly encodes silhouette and color using a mixed attention module and a color adapter.
                 In the second stage, we present a local enhancement model with an adaptive appearance-aware module to inject user-defined logos and spatial constraints, enabling accurate placement and visual consistency.
                 To support this task, we release GarmentBench, a large-scale dataset comprising over 180K garment samples paired with multi-level design conditions, including sketches, color references, logo placements, and textual prompts. 
                 Extensive experiments demonstrate that our method outperforms existing baselines, achieving superior structural stability, color fidelity, and local controllability performance. 
-              The code and model are available at <a href="https://github.com/muzishen/IMAGGarment-1" style="font-weight: bold;">https://github.com/muzishen/IMAGGarment-1</a>.
+              Code, models, and datasets are publicly available at <a href="https://github.com/muzishen/IMAGGarment" style="font-weight: bold;">https://github.com/muzishen/IMAGGarment</a>.
             </p>
             </p>
           </div>
